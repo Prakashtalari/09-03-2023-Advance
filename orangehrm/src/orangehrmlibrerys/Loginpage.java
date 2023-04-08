@@ -47,7 +47,15 @@ public boolean isErrmsgdisplayed()
 	}
 	
 }
+public boolean isEmpModuleDisplyed()
+{
+	try {
+		driver.findElement(By.linkText("Admin")).isDisplayed();
+		return false;
+	} catch (Exception e) {
+		return true;
+	}
+}
 
 
-	
 }

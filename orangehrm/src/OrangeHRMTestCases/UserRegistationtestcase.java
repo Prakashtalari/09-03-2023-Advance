@@ -7,6 +7,7 @@ import orangehrmlibrerys.User;
 public class UserRegistationtestcase {
 
 	public static void main(String[] args) throws InterruptedException {
+
 		
 		AppUtiles.LaunchApp("http://Orangehrm.qedgetech.com");
 		

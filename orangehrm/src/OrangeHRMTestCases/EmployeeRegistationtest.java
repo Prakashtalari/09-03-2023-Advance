@@ -14,7 +14,7 @@ public class EmployeeRegistationtest
 		lp.AdminLogin("Admin", "Qedge123!@#");
 		
 		NewEmploye emp = new NewEmploye();
-	boolean res= 	emp.addEmployee("prakash9849", "Demo");
+	boolean res= 	emp.addEmployee("prakash9849","Qedge123!@#");
 		
 		if (res) {
 			System.out.println("Employee Registaion Test Pass");
