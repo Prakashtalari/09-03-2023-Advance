@@ -14,18 +14,19 @@ public class EmployeeRegistationtest
 		lp.AdminLogin("Admin", "Qedge123!@#");
 		
 		NewEmploye emp = new NewEmploye();
-		  boolean res=  emp.addEmployee("prakash9849", "demo");
-           if (res)
-           {
-			System.out.println("Employee Registion Test Pass");
-		    }else 
-		    {
+	boolean res= 	emp.addEmployee("prakash9849", "Demo");
+		
+		if (res) {
+			System.out.println("Employee Registaion Test Pass");
+		}else {
 			System.out.println("Employee Registation Test Fail");
-		     }
-		     
-		     AppUtiles.closeapp();
-		     lp.logout();
-	    }
+		}
+		
+		lp.logout();
+		AppUtiles.closeapp();
+		
+	}
+	
 	  }
 
 

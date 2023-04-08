@@ -33,22 +33,15 @@ public class NewEmploye extends AppUtiles
 		boolean flag = false;
 		for(int i=1;i<rows.size();i++)
 		{
-			
-		cols = 	(List<WebElement>) rows.get(i).findElement(By.tagName("td"));
-		if(cols.get(i).getText().equalsIgnoreCase(empid))
+			cols=rows.get(i).findElements(By.tagName("td"));
+		if	(cols.get(1).getText().equalsIgnoreCase(empid))
 		{
-		
-			flag = true;
-			break;
+			flag= true ;
 		}
+			
+			
 		}
-		
 		return flag;
 	}	
-
-	public void logout()
-	{
-		driver.findElement(By.partialLinkText("Welcome Qedge")).click();
-		driver.findElement(By.linkText("Logout")).click();
-	}
+     
 }
